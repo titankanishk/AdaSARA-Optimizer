@@ -34,3 +34,31 @@ AdaSARA-Optimizer/
 │   ├── quadratic.py
 │   ├── rosenbrock.py
 │   └── mnist.py
+
+---
+
+## 🧠 Key Idea
+
+AdaSARA introduces a speed-aware correction term:
+
+\[
+s_t = \frac{|\Delta_{t-1}| \cdot |g_t|}{|\Delta_{t-1}| + |g_t| + \varepsilon}
+\]
+
+which modifies Adam’s denominator:
+
+\[
+\Delta_{t}^{AdaSARA} = -\alpha \frac{\hat{m}_t}{\sqrt{\hat{v}_t} + G s_t + \varepsilon}
+\]
+
+helping prevent overshooting and oscillations in regions of steep gradient curvature.
+
+---
+
+## 📦 Installation
+
+### **Clone the repository**
+```bash
+git clone https://github.com/kanishkkhandelwal/AdaSARA-Optimizer.git
+cd AdaSARA-Optimizer
+
