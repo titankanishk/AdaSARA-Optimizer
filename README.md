@@ -23,7 +23,6 @@ This repository provides the full implementation, reproducible experiments, conv
 
 ## 📁 Project Structure
 
-```bash
 AdaSARA-Optimizer/
 │── README.md                     # Project overview & documentation
 │── requirements.txt              # Dependencies to reproduce results
